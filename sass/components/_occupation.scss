@@ -1,0 +1,48 @@
+.occupation__title {
+    color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    padding-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.occupation__list {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 94px;
+}
+
+.occupation__item {
+    padding-right: 30px;
+    padding-left: 0px;
+}
+
+.occupation__list .occupation__item:last-child {
+    padding-right: 0px;
+}
+
+.occupation__text {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--footer-text-color);
+    font-size: 14px;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+}
+.occupation__thumb {
+    position: relative;
+    display: flex;
+}

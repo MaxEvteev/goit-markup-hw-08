@@ -1,0 +1,23 @@
+.benefits {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 1170px;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+.benefits__item {
+    margin-left: 8px;
+    border-radius: 4px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.benefits__item:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.benefits .benefits__item:first-child {
+    margin-left: 0px;
+}

@@ -1,0 +1,98 @@
+.team {
+    background-color: var(--button-backgrownd);
+}
+
+.team__title {
+    color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
+.team__list {
+    list-style-type: none;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-bottom: 94px;
+}
+
+.team__list.team__item:last-child {
+    margin-right: 0px;
+}
+
+.team__item {
+    margin-right: 30px;
+    background-color: var(--body-backgrownd);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team__names {
+    color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.team__profession {
+    color: var(--subtitle-text-color);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+.socials {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-bottom: 30px;
+}
+
+.socials__item + .socials__item {
+    margin-left: 10px;
+}
+
+.socials__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--body-backgrownd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+    color: #afb1b8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__link:hover {
+    color: var(--body-backgrownd);
+    background-color: var(--accent-color);
+}
+.team__icon {
+    width: 20px;
+    height: 20px;
+}

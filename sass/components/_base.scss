@@ -1,0 +1,16 @@
+body {
+    background-color: var(--body-backgrownd);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', 'Nunito', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
