@@ -5,11 +5,11 @@
 .page-footer__conteiner {
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 231px;
+    width: 100%;
 }
 .page-footer__conteiner > .logo {
     color: var(--footer-text-color);
-    font-family: Raleway;
+    font-family: 'Raleway' sans-serif;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.17;
@@ -25,6 +25,8 @@
 .address {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .address .address__text:last-child {
     margin-bottom: 0px;
@@ -42,7 +44,7 @@
 }
 .address__text a {
     color: var(--subtitle-text-color);
-    font-family: Roboto;
+    font-family: 'Roboto' sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -64,35 +66,42 @@
 }
 
 .footer-socials__title {
+    font-family: 'Roboto' sans-serif;
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     line-height: 1.17;
     color: var(--footer-text-color);
     margin-top: 0px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .e-mail-form__title {
+    font-family: 'Roboto' sans-serif;
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     line-height: 1.17;
     color: var(--footer-text-color);
     margin-top: 0px;
     margin-bottom: 20px;
+    text-align: center;
 }
 .footer-socials {
-    padding-top: 72px;
-    margin-left: 70px;
-    margin-right: 93px;
+   
+    margin-left: auto;
+    margin-right: auto;
 }
 .e-mail-form {
-    padding-top: 72px;
+    padding-top: 60px;
 }
 
 .form-footer {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .form-footer__label {
     position: absolute;
@@ -111,6 +120,7 @@
 .footer-socials__list {
     list-style: none;
     display: flex;
+    justify-content: center;
     padding-left: 0px;
     margin: 0px;
 }
@@ -131,7 +141,7 @@
 }
 
 .form-footer__imput {
-    width: 354px;
+    width: 100%;
     height: 50px;
     background-color: var(--footer-backgrownd);
     border-radius: 4px;
@@ -176,6 +186,6 @@
     margin-right: 0px;
 }
 
-.for-flex {
-    display: flex;
-}
+// .for-flex {
+//     display: flex;
+// }
