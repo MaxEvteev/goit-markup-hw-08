@@ -22,23 +22,28 @@ body {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 320px;
 }
 
-@media (min-width: 480px) {
-  .container {
-    width: 480px;
+.container.adaptive {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .container.adaptive {
+    max-width: 480px;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
+@media screen and (min-width: 768px) {
+  .container.adaptive {
+    max-width: 768px;
   }
 }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
+@media screen and (min-width: 1200px) {
+  .container.adaptive {
+    max-width: 1200px;
   }
 }
 
@@ -151,7 +156,7 @@ body {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .occupation {
     display: none;
   }
