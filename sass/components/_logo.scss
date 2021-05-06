@@ -12,6 +12,9 @@
         display: inline-flex;
         padding-top: 26px;
     }
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }
 }
 
 .logo > .logo__text {
