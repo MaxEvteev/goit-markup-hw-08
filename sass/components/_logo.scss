@@ -7,6 +7,11 @@
     text-decoration: none;
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        padding-top: 26px;
+    }
 }
 
 .logo > .logo__text {

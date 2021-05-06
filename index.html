@@ -76,6 +76,24 @@
                             >
                         </li>
                     </ul>
+                    <button type="button" class="main-nav__button is-open">
+                        <svg
+                            class="main-nav__icon"
+                            width="40px"
+                            height="40px"
+                            aria-label="Переключатель мобильного меню"
+                            aria-expanded="false"
+                        >
+                            <use
+                                class="icon__cross"
+                                href="./images/icons-menu.svg#icon-close_40px"
+                            ></use>
+                            <use
+                                class="icon__menu"
+                                href="./images/icons-menu.svg#icon-menu_40px"
+                            ></use>
+                        </svg>
+                    </button>
                 </nav>
             </div>
         </header>
@@ -714,29 +732,34 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="e-mail-form">
-                        <h2 class="e-mail-form__title">
-                            ПОДПИШИТЕСЬ НА РАССЫЛКУ
-                        </h2>
-                        <form class="form-footer">
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                class="form-footer__imput"
-                            />
-                            <label for="email" class="form-footer__label"
-                                >E-mail</label
-                            >
-                            <button type="submit" class="form-footer__button">
-                                Подписаться
-                                <svg class="form-footer__icon" width="24px">
-                                    <use
-                                        href="./images/icons.svg#icon-icon-send"
-                                    ></use>
-                                </svg>
-                            </button>
-                        </form>
+                    <div class="footer-thumb">
+                        <div class="e-mail-form">
+                            <h2 class="e-mail-form__title">
+                                ПОДПИШИТЕСЬ НА РАССЫЛКУ
+                            </h2>
+                            <form class="form-footer">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    class="form-footer__imput"
+                                />
+                                <label for="email" class="form-footer__label"
+                                    >E-mail</label
+                                >
+                                <button
+                                    type="submit"
+                                    class="form-footer__button"
+                                >
+                                    Подписаться
+                                    <svg class="form-footer__icon" width="24px">
+                                        <use
+                                            href="./images/icons.svg#icon-icon-send"
+                                        ></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -843,5 +866,12 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="js/mobile-menu.js"></script>
     </body>
 </html>

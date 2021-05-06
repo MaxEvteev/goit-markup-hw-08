@@ -6,6 +6,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        flex-direction: column;
+        width: 50%;
+        padding-top: 34px;
+    }
 }
 .page-footer__conteiner > .logo {
     color: var(--footer-text-color);
@@ -75,6 +82,11 @@
     margin-top: 0px;
     margin-bottom: 20px;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        justify-content: center;
+    }
 }
 
 .e-mail-form__title {
@@ -89,17 +101,32 @@
     text-align: center;
 }
 .footer-socials {
-   
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        flex-direction: column;
+        width: 49%;
+    }
 }
 .e-mail-form {
     padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 0px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 460px;
+        margin-right: 0px;
+    }
 }
 
 .form-footer {
     position: relative;
     display: flex;
+
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -152,6 +179,12 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .form-footer__imput:focus {
@@ -189,3 +222,10 @@
 // .for-flex {
 //     display: flex;
 // }
+
+.footer-thumb {
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        justify-content: center;
+    }
+}

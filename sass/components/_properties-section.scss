@@ -13,10 +13,20 @@
 .properties-list__item {
     width: 100%;
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
 }
 .properties-list .properties-list__item:last-child {
     margin-bottom: 0px;
 }
+
+.properties-list .properties-list__item:nth-child(3) {
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+    }
+}
+
 .properties-list__title {
     color: var(--title-text-color);
     font-weight: bold;
@@ -34,12 +44,12 @@
     margin: 0px;
 }
 .properties-list__details {
-   width: 100%;
+    width: 100%;
 }
 
 .properties-list__logo {
     background-color: var(--button-backgrownd);
-    width: 450px;
+    width: 100%;
     height: 120px;
     display: flex;
     justify-content: center;

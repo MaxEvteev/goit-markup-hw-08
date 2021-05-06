@@ -6,15 +6,6 @@ body {
     margin-right: auto;
 }
 
-// .container {
-//     box-sizing: border-box;
-//     max-width: 1200px;
-//     padding-right: 15px;
-//     padding-left: 15px;
-//     margin-left: auto;
-//     margin-right: auto;
-// }
-
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -24,7 +15,7 @@ body {
 }
 
 .container.adaptive {
-    max-width: 100%;
+    min-width: 320px;
 }
 
 // @media screen and (min-width: 480px) {
