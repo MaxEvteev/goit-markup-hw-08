@@ -4,8 +4,12 @@
 
 .main-nav {
     display: flex;
-    justify-content: space-between;
-    height: 80px;
+    align-items: center;
+
+    @media screen and (max-width: 1199px) {
+        justify-content: space-between;
+        height: 80px;
+    }
 }
 .main-nav__list {
     display: flex;
@@ -18,31 +22,48 @@
     @media screen and (min-width: 768px) {
         display: inline-flex;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
 }
 
 .contacts {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-end;
     margin-left: auto;
     list-style-type: none;
     padding-left: 0px;
+
+    @media screen and (max-width: 1199px) {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
-// .contacts .contacts-item + .contacts-item {
-//     margin-left: 50px;
-// }
+.contacts .contacts-item + .contacts-item {
+    @media screen and (min-width: 1200px) {
+        margin-left: 50px;
+    }
+}
 
 .main-nav__item {
     margin-right: 50px;
 }
-// .main-nav__list .main-nav__item:last-child {
-//     margin-right: 0;
-// }
+
+.main-nav__list .main-nav__item:last-child {
+    @media screen and (min-width: 1200px) {
+        margin-right: 0;
+    }
+}
+
 .main-nav__list a {
     display: block;
     color: var(--title-text-color);
-    font-family: Roboto;
+    font-family: 'Roboto' sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -72,6 +93,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+
     @media screen and (min-width: 768px) {
         font-size: 12px;
     }
@@ -79,19 +101,25 @@
 
 .contacts__item {
     list-style-type: none;
-    // display: flex;
-    // justify-content: center;
-    // margin-left: 30px;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+    }
 }
 
 .contacts__link {
     background-color: var(--body-backgrownd);
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     fill: currentColor;
     color: var(--subtitle-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .contacts__link:hover {
     color: var(--accent-color);
