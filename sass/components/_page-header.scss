@@ -1,5 +1,6 @@
 .page-header {
     border-bottom: 1px solid #ececec;
+    position: relative;
 }
 
 .main-nav {
@@ -151,14 +152,18 @@
     }
 }
 
-.main-nav__button .icon__cross {
-    display: none;
+.js-menu-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: var(--body-backgrownd);
+    width: 100vw;
+    height: 100vh;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
 }
 
-.main-nav__button.is-open .icon__cross {
-    display: block;
-}
-
-.main-nav__button.is-open .icon__menu {
-    display: none;
+.js-menu-container.is-open {
+    transform: translateX(0);
 }
