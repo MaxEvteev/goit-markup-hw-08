@@ -18,23 +18,6 @@ body {
     min-width: 320px;
 }
 
-// @media screen and (min-width: 480px) {
-//     .container.adaptive {
-//         max-width: 480px;
-//     }
-// }
-
-// @media screen and (min-width: 768px) {
-//     .container.adaptive {
-//         max-width: 768px;
-//     }
-// }
-
-// @media screen and (min-width: 1200px) {
-//     .container.adaptive {
-//         max-width: 1200px;
-//     }
-
 @media screen and (min-width: 480px) {
     .container.adaptive {
         max-width: 480px;
@@ -50,4 +33,10 @@ body {
     .container.adaptive {
         max-width: 1200px;
     }
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
