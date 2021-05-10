@@ -1,6 +1,6 @@
 .hero-section {
     max-width: 100%;
-    height: auto;
+    height: 400px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -18,31 +18,62 @@
 
 @media (min-resolution: 2dppx) {
     .hero-section {
-        background-image: url(../images/header_img_mobile@2x.jpg);
+        background-image: linear-gradient(
+                0deg,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/header_img_mobile@2x.jpg);
     }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
     .hero-section {
-        background-image: url(../images/header_img_tablet.jpg);
+        background-image: linear-gradient(
+                0deg,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/header_img_tablet.jpg);
     }
 
     @media (min-resolution: 2dppx) {
         .hero-section {
-            background-image: url(../images/header_img_tablet@2x.jpg);
+            background-image: linear-gradient(
+                    0deg,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url(../images/header_img_tablet@2x.jpg);
         }
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
     .hero-section {
-        background-image: url(../images/header_img_desktop.jpg);
+        background-image: linear-gradient(
+                0deg,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/header_img_desktop.jpg);
     }
 
     @media (min-resolution: 2dppx) {
         .hero-section {
-            background-image: url(../images/header_img_desktop@2x.jpg);
+            background-image: linear-gradient(
+                    0deg,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url(../images/header_img_desktop@2x.jpg);
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-section {
+        height: 600px;
     }
 }
 

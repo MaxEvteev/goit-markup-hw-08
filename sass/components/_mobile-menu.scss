@@ -102,6 +102,17 @@
     display: flex;
     margin-top: 64px;
     margin-bottom: 48px;
+
+    @media screen and (max-width: 400px) {
+        flex-wrap: wrap;
+    }
+}
+
+.js-socials .js-socials__item:last-child {
+    @media screen and (max-width: 400px) {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
 }
 
 .js-socials__item {
