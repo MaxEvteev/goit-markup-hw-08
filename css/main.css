@@ -17,12 +17,19 @@ body {
   margin-right: auto;
 }
 
+.section {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 320px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container.adaptive {
@@ -950,7 +957,9 @@ body {
 
 @media screen and (max-width: 479px) {
   .clients {
-    display: inline;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 }
 
@@ -979,6 +988,7 @@ body {
             box-sizing: border-box;
     width: 210px;
     height: 92px;
+    margin: 15px;
   }
 }
 
@@ -986,14 +996,12 @@ body {
   .clients__item {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin: 15px;
   }
 }
 
 @media screen and (max-width: 479px) {
   .clients__item {
     width: calc((100%-4 * 15px) / 2);
-    margin: 15px;
   }
 }
 

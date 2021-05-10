@@ -41,7 +41,7 @@
     }
 
     @media screen and (max-width: 479px) {
-        display: inline;
+        display: inline-flex;
     }
 }
 
@@ -64,16 +64,15 @@
         box-sizing: border-box;
         width: 210px;
         height: 92px;
+        margin: 15px;
     }
 
     @media screen and (min-width: 480px) {
         flex-wrap: nowrap;
-        margin: 15px;
     }
 
     @media screen and (max-width: 479px) {
         width: calc((100%-4 * 15px) / 2);
-        margin: 15px;
     }
 }
 .clients__link {
